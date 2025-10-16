@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
 
 # Initialize Groq client
-client = Groq(api_key="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")
+client = Groq(api_key="message_me")
 
 def ask_groq(prompt):
     chat_completion = client.chat.completions.create(
@@ -33,3 +33,4 @@ def get_msg():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
